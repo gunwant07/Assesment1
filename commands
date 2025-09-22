@@ -1,0 +1,28 @@
+ clear
+    2  apt-get update
+    3  sudo apt update
+    4  sudo apt install openjdk-11-jdk
+    5  sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian/jenkins.io-2023.key
+    6  echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+    7  sudo apt-get update
+    8  sudo apt-get install jenkins
+    9  jenkins --version
+   10  sudo apt install openjdk-17-jdk
+   11  sudo wget -O /etc/apt/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian/jenkins.io-2023.key
+   12  echo "deb [signed-by=/etc/apt/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+   13  sudo apt-get update
+   14  sudo apt-get install jenkins
+   15  jenkins --version
+   16  sudo systemctl enable jenkins
+   17  sudo systemctl start jenkins
+   18  sudo apt install openjdk-17-jdk
+   19  java -version
+   20  sudo systemctl restart jenkins
+   21  systemctl status jenkins
+   22  sudo apt install nodejs npm
+   23  sudo su -jenkins
+   24  sudo su - jenkins
+   25  sudo apt install zip
+   26  sudo apt install unzip
+   27  find /var/lib/jenkins/workspace -name build.zip
+   28  history
